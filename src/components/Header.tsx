@@ -1,100 +1,93 @@
-const img =
+import React from "react";
+
+// 이미지 URL들 (Figma에서 추출)
+const headerBgImg =
   "http://localhost:3845/assets/c14f9c63fa1f29bef2b87a946a6b316938dbda6b.png";
-const img2 =
+const logoImg =
   "http://localhost:3845/assets/8d3493675a08ae1f4da162e87a6c546828d73bba.png";
-const img1 =
+const menuIcon =
   "http://localhost:3845/assets/3eaa63b80913e4fbfc1a39d9b21c98119bab03af.svg";
-const img3 =
+const bellIcon =
   "http://localhost:3845/assets/58ca699f884eb8bdedfa3ed146f69a5665f87797.svg";
-const img4 =
-  "http://localhost:3845/assets/4ae7e2361918024cc8ab731fee976e15b2d744f0.svg";
+
+const menuItems = [
+  "한국외식산업연구원",
+  "외식정보",
+  "알림마당",
+  "패널설문조사",
+  "정부지원",
+  "교육",
+  "부가혜택몰",
+];
 
 export default function Header() {
   return (
-    <div
-      className="relative size-full"
-      data-name="Component 22"
-      data-node-id="677:5047"
-    >
-      <div className="absolute bg-white bottom-[0.76%] left-0 right-0 top-[22.9%]" />
-      <div className="absolute bottom-[77.1%] left-0 right-0 top-0">
-        <img
-          alt=""
-          className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
-          src={img}
-        />
-      </div>
-      <p className="absolute font-['Pretendard:Medium',_sans-serif] inset-[55.73%_62.43%_33.59%_27.78%] leading-[14px] not-italic text-[#333333] text-[18px] text-nowrap whitespace-pre">
-        한국외식산업연구원
-      </p>
-      <p className="absolute font-['Pretendard:Medium',_sans-serif] inset-[55.73%_55.28%_33.59%_40.35%] leading-[14px] not-italic text-[#333333] text-[18px] text-nowrap whitespace-pre">
-        외식정보
-      </p>
-      <p className="absolute font-['Pretendard:Medium',_sans-serif] inset-[55.73%_48.13%_33.59%_47.5%] leading-[14px] not-italic text-[#333333] text-[18px] text-nowrap whitespace-pre">
-        알림마당
-      </p>
-      <p className="absolute font-['Pretendard:Medium',_sans-serif] inset-[55.73%_44.93%_33.59%_53.96%] leading-[14px] not-italic text-[#888888] text-[18px] text-nowrap whitespace-pre">
-        ㅣ
-      </p>
-      <p className="absolute font-['Pretendard:Medium',_sans-serif] inset-[55.73%_36.32%_33.59%_57.15%] leading-[14px] not-italic text-[#333333] text-[18px] text-nowrap whitespace-pre">
-        패널설문조사
-      </p>
-      <p className="absolute font-['Pretendard:Medium',_sans-serif] inset-[55.73%_29.17%_33.59%_66.46%] leading-[14px] not-italic text-[#333333] text-[18px] text-nowrap whitespace-pre">
-        정부지원
-      </p>
-      <p className="absolute font-['Pretendard:Medium',_sans-serif] inset-[55.73%_24.17%_33.59%_73.61%] leading-[14px] not-italic text-[#333333] text-[18px] text-nowrap whitespace-pre">
-        교육
-      </p>
-      <p className="absolute font-['Pretendard:Medium',_sans-serif] inset-[55.73%_15.97%_33.59%_78.61%] leading-[14px] not-italic text-[#333333] text-[18px] text-nowrap whitespace-pre">
-        부가혜택몰
-      </p>
-      <p className="absolute font-['Pretendard:Medium',_sans-serif] inset-[6.87%_12.71%_83.97%_84.38%] leading-[12px] not-italic text-[12px] text-nowrap text-right text-white whitespace-pre">
-        로그인/회원가입
-      </p>
-      <p className="absolute font-['Pretendard:Medium',_sans-serif] inset-[6.87%_6.94%_83.97%_88.68%] leading-[12px] not-italic text-[12px] text-nowrap text-right text-white whitespace-pre">
-        회원정보찾기
-      </p>
-      <div className="absolute contents inset-[45.04%_7.29%_24.43%_89.93%]">
-        <div className="absolute bg-[#222222] inset-[45.04%_7.29%_24.43%_89.93%] rounded-[10px]" />
-        <div className="absolute inset-[51.15%_7.85%_30.53%_90.49%] overflow-clip">
-          <div className="absolute inset-[21.77%_13.65%_21.98%_13.44%]">
-            <img alt="" className="block max-w-none size-full" src={img1} />
-          </div>
-        </div>
-      </div>
-      <div className="absolute inset-[45.8%_78.89%_23.66%_6.94%]">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <header className="w-full relative bg-white">
+      {/* 상단 보라색 배경 영역 */}
+      <div className="relative h-[131px] w-full">
+        {/* 배경 이미지 */}
+        <div className="absolute top-0 left-0 right-0 h-[100.76px]">
           <img
-            alt=""
-            className="absolute h-[119.21%] left-[-6.1%] max-w-none top-[-8.47%] w-[106.1%]"
-            src={img2}
+            src={headerBgImg}
+            alt="header background"
+            className="w-full h-full object-cover"
           />
         </div>
-      </div>
-      <div className="absolute contents left-[1240px] top-[59px]">
-        <div className="absolute bg-[#e7e7e7] border-2 border-[#e7e7e7] border-solid inset-[45.04%_11.11%_24.43%_86.11%] rounded-[10px]" />
-        <div className="absolute contents left-[calc(50%+540px)] top-[calc(50%+13.5px)] translate-x-[-50%] translate-y-[-50%]">
-          <div className="absolute left-[calc(50%+540px)] size-[24px] top-[calc(50%+13.5px)] translate-x-[-50%] translate-y-[-50%]">
-            <div className="absolute inset-[5%_4.17%_12.51%_20%]">
-              <div className="absolute bottom-[-5.05%] left-[-5.49%] right-0 top-0">
-                <img alt="" className="block max-w-none size-full" src={img3} />
-              </div>
-            </div>
-          </div>
+
+        {/* 하단 흰색 영역 */}
+        <div className="absolute bottom-[1px] left-0 right-0 h-[100px] bg-white" />
+
+        {/* 상단 마이페이지/로그아웃 */}
+        <div className="absolute top-[9px] right-[100px] flex gap-[55px] text-[12px] text-white font-['Pretendard:Medium',_sans-serif]">
+          <span className="cursor-pointer hover:text-gray-200 transition-colors">
+            마이페이지
+          </span>
+          <span className="cursor-pointer hover:text-gray-200 transition-colors">
+            로그아웃
+          </span>
+        </div>
+
+        {/* 로고 */}
+        <div className="absolute bottom-[31px] left-[100px] w-[210px] h-[40px]">
+          <img
+            src={logoImg}
+            alt="한국외식산업연구원 로고"
+            className="w-full h-full object-contain"
+          />
+        </div>
+
+        {/* 메인 네비게이션 */}
+        <nav className="absolute bottom-[44px] left-[400px] right-[160px] flex items-center justify-between">
+          {menuItems.map((item, index) => (
+            <React.Fragment key={item}>
+              <span className="font-['Pretendard:Bold',_sans-serif] text-[18px] text-[#5a33be] cursor-pointer hover:text-[#4427a0] transition-colors">
+                {item}
+              </span>
+              {index < menuItems.length - 1 && index === 2 && (
+                <span className="font-['Pretendard:Medium',_sans-serif] text-[18px] text-[#888888] mx-2">
+                  ㅣ
+                </span>
+              )}
+            </React.Fragment>
+          ))}
+        </nav>
+
+        {/* 우측 버튼들 */}
+        <div className="absolute bottom-[31px] right-[100px] flex items-center gap-[10px]">
+          {/* 알림 버튼 */}
+          <button className="bg-[#e7e7e7] border-2 border-[#e7e7e7] rounded-[10px] w-[40px] h-[40px] flex items-center justify-center hover:bg-[#d0d0d0] transition-colors">
+            <img src={bellIcon} alt="알림" className="w-[24px] h-[24px]" />
+          </button>
+
+          {/* 햄버거 메뉴 버튼 */}
+          <button className="bg-[#222222] rounded-[10px] w-[40px] h-[40px] flex items-center justify-center hover:bg-[#333333] transition-colors">
+            <img src={menuIcon} alt="메뉴" className="w-[18px] h-[18px]" />
+          </button>
         </div>
       </div>
-      <div className="absolute contents left-[1240px] top-[59px]">
-        <div className="absolute bg-[#e7e7e7] border-2 border-[#e7e7e7] border-solid inset-[45.04%_11.11%_24.43%_86.11%] rounded-[10px]" />
-        <div className="absolute contents left-[calc(50%+540px)] top-[calc(50%+13.5px)] translate-x-[-50%] translate-y-[-50%]">
-          <div className="absolute left-[calc(50%+540px)] size-[24px] top-[calc(50%+13.5px)] translate-x-[-50%] translate-y-[-50%]">
-            <div className="absolute inset-[20.83%_20%_12.51%_20%]">
-              <div className="absolute inset-[-6.25%_-6.94%]">
-                <img alt="" className="block max-w-none size-full" src={img4} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+      {/* 하단 구분선 */}
+      <div className="bg-[#e6e6e6] h-px w-full" />
+    </header>
   );
 }

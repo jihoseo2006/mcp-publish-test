@@ -9,6 +9,7 @@ import Kfiri from "./pages/k-firi";
 import Gov from "./pages/gov";
 import Education from "./pages/education";
 import Additional from "./pages/additional";
+import Detail from "./pages/detail";
 
 
 
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/pannel",
     element: <Pannel />,
+  },
+  {
+    path: "/detail",
+    element: <Detail />,
   },
   {
     path: "/k-firi",

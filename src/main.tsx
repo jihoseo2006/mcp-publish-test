@@ -10,6 +10,7 @@ import Gov from "./pages/gov";
 import Education from "./pages/education";
 import Additional from "./pages/additional";
 import Detail from "./pages/detail";
+import PannelInsert from "./pages/pannel-insert";
 
 
 
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
     path: "/additional",
     element: <Additional />,
   },
+  {
+    path: "/pannel-insert",
+    element: <PannelInsert />
+  }
 ]);
 
 

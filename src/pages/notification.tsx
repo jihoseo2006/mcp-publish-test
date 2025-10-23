@@ -110,7 +110,7 @@ const Notification = () => {
         </div>
 
         {/* 검색 영역 */}
-        <div className="flex justify-center mb-12">
+        <div className="flex justify-center mb-[51px]">
           <div className="border border-[#838383] rounded-[100px] px-[24px] py-[13px] flex items-center gap-[223px]">
             <input
               type="text"
@@ -179,7 +179,7 @@ const Notification = () => {
         </div>
 
         {/* 페이지네이션 */}
-        <div className="flex items-center justify-center gap-[5px] mt-40">
+        <div className="flex items-center justify-center gap-[5px] mt-[40px]">
           <button className="w-[40px] h-[40px] flex items-center justify-center">
             <img src={iconArrowLeft} alt="이전 페이지" className="w-[40px] h-[40px]" />
           </button>

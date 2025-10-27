@@ -79,7 +79,7 @@ export default function Header() {
 
           {/* 햄버거 메뉴 버튼 */}
           <button className="bg-[#222222] rounded-[10px] w-10 h-10 flex items-center justify-center">
-            <img src={menuIcon} alt="메뉴" className="w-[18px] h-[18px]" />
+            <img src={menuIcon} alt="메뉴" className="w-18 h-18" />
           </button>
         </div>
       </div>

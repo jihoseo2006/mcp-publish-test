@@ -145,7 +145,7 @@ const PannelInsert = () => {
       </div>
 
       {/* 패널 리스트 */}
-      <div className="w-full max-w-1240 mx-auto px-4 pb-[160px]">
+  <div className="w-full px-4 mx-auto max-w-1240 pb-160">
         {/* 상단 구분선 */}
         <div className="h-[1px] bg-[#333333] mb-[31px]" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[24px] gap-y-[20px]">

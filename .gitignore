@@ -25,3 +25,7 @@ dist-ssr
 
 
 .env
+
+# TypeScript build info
+*.tsbuildinfo
+package-lock.json

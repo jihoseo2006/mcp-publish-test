@@ -22,33 +22,31 @@ const menuItems = [
 
 export default function Header() {
   return (
-    <header className="w-full relative bg-white">
+    <header className="w-full bg-white">
       {/* 상단 보라색 배경 영역 */}
-      <div className="relative h-[131px] w-full">
+      <div className="w-full h-30 relative">
         {/* 배경 이미지 */}
-        <div className="absolute top-0 left-0 right-0 h-[100.76px]">
-          <img
-            src={headerBgImg}
-            alt="header background"
-            className="w-full h-full object-cover"
-          />
-        </div>
-
-        {/* 하단 흰색 영역 */}
-        <div className="absolute bottom-[1px] left-0 right-0 h-[100px] bg-white" />
-
-        {/* 상단 마이페이지/로그아웃 */}
-        <div className="absolute top-[9px] right-[100px] flex gap-[55px] text-[12px] text-white font-['Pretendard:Medium',_sans-serif]">
-          <span className="cursor-pointer hover:text-gray-200 transition-colors">
+        <img
+          src={headerBgImg}
+          alt="header background"
+          className="w-full h-full object-cover"
+        />
+        
+        {/* 상단 우측 텍스트 */}
+        <div className="absolute top-2 right-25 flex gap-16">
+          <span className="font-['Pretendard:Medium',_sans-serif] text-3 text-white cursor-pointer">
             마이페이지
           </span>
-          <span className="cursor-pointer hover:text-gray-200 transition-colors">
+          <span className="font-['Pretendard:Medium',_sans-serif] text-3 text-white cursor-pointer">
             로그아웃
           </span>
         </div>
+      </div>
 
-        {/* 로고 */}
-        <div className="absolute bottom-[31px] left-[100px] w-[210px] h-[40px]">
+      {/* 하단 흰색 영역 */}
+      <div className="bg-white w-full flex items-center px-25 py-8">
+        {/* 좌측 로고 */}
+        <div className="w-52 h-10 flex-shrink-0">
           <img
             src={logoImg}
             alt="한국외식산업연구원 로고"
@@ -56,15 +54,15 @@ export default function Header() {
           />
         </div>
 
-        {/* 메인 네비게이션 */}
-        <nav className="absolute bottom-[44px] left-[400px] right-[160px] flex items-center justify-between">
+        {/* 중앙 메뉴 네비게이션 - flex-1로 가운데 정렬 */}
+        <nav className="flex-1 flex items-center justify-center gap-8">
           {menuItems.map((item, index) => (
             <React.Fragment key={item}>
-              <span className="font-['Pretendard:Bold',_sans-serif] text-[18px] text-[#5a33be] cursor-pointer hover:text-[#4427a0] transition-colors">
+              <span className="font-['Pretendard:Bold',_sans-serif] text-[18px] text-[#5a33be] cursor-pointer whitespace-nowrap">
                 {item}
               </span>
               {index < menuItems.length - 1 && index === 2 && (
-                <span className="font-['Pretendard:Medium',_sans-serif] text-[18px] text-[#888888] mx-2">
+                <span className="font-['Pretendard:Medium',_sans-serif] text-[18px] text-[#888888] px-1">
                   ㅣ
                 </span>
               )}
@@ -73,21 +71,18 @@ export default function Header() {
         </nav>
 
         {/* 우측 버튼들 */}
-        <div className="absolute bottom-[31px] right-[100px] flex items-center gap-[10px]">
+        <div className="flex items-center gap-3 flex-shrink-0">
           {/* 알림 버튼 */}
-          <button className="bg-[#e7e7e7] border-2 border-[#e7e7e7] rounded-[10px] w-[40px] h-[40px] flex items-center justify-center hover:bg-[#d0d0d0] transition-colors">
-            <img src={bellIcon} alt="알림" className="w-[24px] h-[24px]" />
+          <button className="bg-[#e7e7e7] border-2 border-[#e7e7e7] border-solid rounded-[10px] w-10 h-10 flex items-center justify-center">
+            <img src={bellIcon} alt="알림" className="w-6 h-6" />
           </button>
 
           {/* 햄버거 메뉴 버튼 */}
-          <button className="bg-[#222222] rounded-[10px] w-[40px] h-[40px] flex items-center justify-center hover:bg-[#333333] transition-colors">
+          <button className="bg-[#222222] rounded-[10px] w-10 h-10 flex items-center justify-center">
             <img src={menuIcon} alt="메뉴" className="w-[18px] h-[18px]" />
           </button>
         </div>
       </div>
-
-      {/* 하단 구분선 */}
-      <div className="bg-[#e6e6e6] h-px w-full" />
     </header>
   );
 }

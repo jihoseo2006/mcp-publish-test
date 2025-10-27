@@ -22,11 +22,11 @@ const menuItems = [
 
 export default function Header() {
   return (
-    <header className="w-full relative bg-white">
+    <header className="w-full bg-white">
       {/* 상단 보라색 배경 영역 */}
-      <div className="relative h-[131px] w-full">
+      <div className="relative w-full">
         {/* 배경 이미지 */}
-        <div className="absolute top-0 left-0 right-0 h-[100.76px]">
+        <div className="w-full h-[100.76px]">
           <img
             src={headerBgImg}
             alt="header background"
@@ -34,10 +34,7 @@ export default function Header() {
           />
         </div>
 
-        {/* 하단 흰색 영역 */}
-        <div className="absolute bottom-[1px] left-0 right-0 h-[100px] bg-white" />
-
-        {/* 상단 마이페이지/로그아웃 */}
+        {/* 상단 마이페이지/로그아웃 - 배경 위 절대 위치 */}
         <div className="absolute top-[9px] right-[100px] flex gap-[55px] text-[12px] text-white font-['Pretendard:Medium',_sans-serif]">
           <span className="cursor-pointer hover:text-gray-200 transition-colors">
             마이페이지
@@ -46,9 +43,12 @@ export default function Header() {
             로그아웃
           </span>
         </div>
+      </div>
 
+      {/* 하단 흰색 영역 - 플렉스 레이아웃 */}
+      <div className="bg-white px-[100px] py-[31px] flex items-end justify-between gap-4">
         {/* 로고 */}
-        <div className="absolute bottom-[31px] left-[100px] w-[210px] h-[40px]">
+        <div className="flex-shrink-0 w-[210px] h-[40px]">
           <img
             src={logoImg}
             alt="한국외식산업연구원 로고"
@@ -57,14 +57,14 @@ export default function Header() {
         </div>
 
         {/* 메인 네비게이션 */}
-        <nav className="absolute bottom-[44px] left-[400px] right-[160px] flex items-center justify-between">
+        <nav className="flex items-center justify-center gap-6 flex-1 min-w-0">
           {menuItems.map((item, index) => (
             <React.Fragment key={item}>
-              <span className="font-['Pretendard:Bold',_sans-serif] text-[18px] text-[#5a33be] cursor-pointer hover:text-[#4427a0] transition-colors">
+              <span className="font-['Pretendard:Bold',_sans-serif] text-[18px] text-[#5a33be] cursor-pointer hover:text-[#4427a0] transition-colors whitespace-nowrap">
                 {item}
               </span>
               {index < menuItems.length - 1 && index === 2 && (
-                <span className="font-['Pretendard:Medium',_sans-serif] text-[18px] text-[#888888] mx-2">
+                <span className="font-['Pretendard:Medium',_sans-serif] text-[18px] text-[#888888]">
                   ㅣ
                 </span>
               )}
@@ -73,7 +73,7 @@ export default function Header() {
         </nav>
 
         {/* 우측 버튼들 */}
-        <div className="absolute bottom-[31px] right-[100px] flex items-center gap-[10px]">
+        <div className="flex items-center gap-[10px] flex-shrink-0">
           {/* 알림 버튼 */}
           <button className="bg-[#e7e7e7] border-2 border-[#e7e7e7] rounded-[10px] w-[40px] h-[40px] flex items-center justify-center hover:bg-[#d0d0d0] transition-colors">
             <img src={bellIcon} alt="알림" className="w-[24px] h-[24px]" />

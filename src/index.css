@@ -1,2 +1,23 @@
+/* Pretendard Font */
+@import url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff2');
+
 @import "tailwindcss";
 @config "../tailwind.config.js";
+
+* {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+/* Custom color variables */
+:root {
+  --primary: #5a33be;
+  --secondary: #193dd0;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-tertiary: #444444;
+  --text-light: #888888;
+  --bg-light: #f4f5f6;
+  --bg-blue: #f4f8ff;
+  --border-light: #d8dde5;
+  --border-gray: #bfc3c8;
+}

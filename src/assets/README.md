@@ -1,0 +1,1 @@
+# Assets Directory\n\nThis directory contains all static assets for the Korean Food Service Industry Research Institute website.\n\n## Structure\n-  - Photos and images\n-  - SVG icons and small graphics \n-  - Logos and branding assets\n\n## Usage\nAssets should be imported and used in React components. Placeholder files are included for development.

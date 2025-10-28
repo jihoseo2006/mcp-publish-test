@@ -8,7 +8,6 @@
 
 ## 지시
 
-- Figma 링크(`FIGMA_URL`)의 컴포넌트를 `src/temp` 경로에 `Temp.tsx`로 구현한다.
 - Figma MCP 서버에 연결할 때, `FIGMA_URL`이 유효한지 확인한다.
 - Figma MCP 서버에서 필요한 리소스를 가져와 사용한다.
 - Figma 디자인 시스템에 없는 컴포넌트는 구현하지 않는다.

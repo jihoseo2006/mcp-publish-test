@@ -59,6 +59,7 @@ const InfoList = () => {
               <input 
                 type="text" 
                 placeholder="검색어를 입력하세요"
+                aria-label="연구보고서 검색"
                 className="flex-1 text-14 text-[#333] outline-none bg-transparent"
                 readOnly
               />
@@ -216,26 +217,48 @@ const InfoList = () => {
         </div>
 
         {/* 페이지네이션 */}
-        <div className="flex items-center justify-center gap-8 mt-60">
-          <button className="w-32 h-32 flex items-center justify-center border border-[#ddd] rounded-4 text-14 text-[#666] bg-white">
+        <div className="flex items-center justify-center gap-8 mt-60" role="navigation" aria-label="페이지네이션">
+          <button 
+            className="w-32 h-32 flex items-center justify-center border border-[#ddd] rounded-4 text-14 text-[#666] bg-white"
+            aria-label="이전 페이지"
+          >
             &lt;
           </button>
-          <button className="w-32 h-32 flex items-center justify-center bg-[#5a33be] text-white text-14 rounded-4">
+          <button 
+            className="w-32 h-32 flex items-center justify-center bg-[#5a33be] text-white text-14 rounded-4"
+            aria-label="1페이지, 현재 페이지"
+            aria-current="page"
+          >
             1
           </button>
-          <button className="w-32 h-32 flex items-center justify-center border border-[#ddd] rounded-4 text-14 text-[#666] bg-white">
+          <button 
+            className="w-32 h-32 flex items-center justify-center border border-[#ddd] rounded-4 text-14 text-[#666] bg-white"
+            aria-label="2페이지로 이동"
+          >
             2
           </button>
-          <button className="w-32 h-32 flex items-center justify-center border border-[#ddd] rounded-4 text-14 text-[#666] bg-white">
+          <button 
+            className="w-32 h-32 flex items-center justify-center border border-[#ddd] rounded-4 text-14 text-[#666] bg-white"
+            aria-label="3페이지로 이동"
+          >
             3
           </button>
-          <button className="w-32 h-32 flex items-center justify-center border border-[#ddd] rounded-4 text-14 text-[#666] bg-white">
+          <button 
+            className="w-32 h-32 flex items-center justify-center border border-[#ddd] rounded-4 text-14 text-[#666] bg-white"
+            aria-label="4페이지로 이동"
+          >
             4
           </button>
-          <button className="w-32 h-32 flex items-center justify-center border border-[#ddd] rounded-4 text-14 text-[#666] bg-white">
+          <button 
+            className="w-32 h-32 flex items-center justify-center border border-[#ddd] rounded-4 text-14 text-[#666] bg-white"
+            aria-label="5페이지로 이동"
+          >
             5
           </button>
-          <button className="w-32 h-32 flex items-center justify-center border border-[#ddd] rounded-4 text-14 text-[#666] bg-white">
+          <button 
+            className="w-32 h-32 flex items-center justify-center border border-[#ddd] rounded-4 text-14 text-[#666] bg-white"
+            aria-label="다음 페이지"
+          >
             &gt;
           </button>
         </div>

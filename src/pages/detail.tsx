@@ -239,38 +239,41 @@ const Detail = () => {
 
         {/* 이전/다음 글 네비게이션 */}
         <div className="border-t border-[#e6e6e6] pt-30 mb-40">
-          <div className="space-y-16">
-            <div className="flex items-center justify-between py-16 px-20 border border-[#e6e6e6] rounded-6">
+          <nav className="space-y-16" aria-label="이전/다음 글 네비게이션">
+            <button className="w-full flex items-center justify-between py-16 px-20 border border-[#e6e6e6] rounded-6 hover:bg-[#f8f9fa] focus:outline-none focus:ring-2 focus:ring-[#5a33be] focus:ring-offset-2">
               <div className="flex items-center gap-12">
                 <div className="w-24 h-24">
                   <img alt="이전 글" className="w-full h-full" src={iconPrev} />
                 </div>
-                <div>
+                <div className="text-left">
                   <span className="text-12 text-[#999] block">이전 글</span>
                   <span className="text-14 text-[#333] font-medium">외식산업 디지털 전환 동향 및 성과분석</span>
                 </div>
               </div>
               <span className="text-12 text-[#999]">2024.10.28</span>
-            </div>
+            </button>
             
-            <div className="flex items-center justify-between py-16 px-20 border border-[#e6e6e6] rounded-6">
+            <button className="w-full flex items-center justify-between py-16 px-20 border border-[#e6e6e6] rounded-6 hover:bg-[#f8f9fa] focus:outline-none focus:ring-2 focus:ring-[#5a33be] focus:ring-offset-2">
               <div className="flex items-center gap-12">
                 <div className="w-24 h-24">
                   <img alt="다음 글" className="w-full h-full" src={iconNext} />
                 </div>
-                <div>
+                <div className="text-left">
                   <span className="text-12 text-[#999] block">다음 글</span>
                   <span className="text-14 text-[#333] font-medium">외식업 인력수급 현황 및 개선방안 연구</span>
                 </div>
               </div>
               <span className="text-12 text-[#999]">2024.12.01</span>
-            </div>
-          </div>
+            </button>
+          </nav>
         </div>
 
         {/* 목록으로 돌아가기 버튼 */}
         <div className="text-center mb-60">
-          <button className="inline-flex items-center gap-8 bg-[#5a33be] text-white px-24 py-12 rounded-6 text-16 font-medium">
+          <button 
+            className="inline-flex items-center gap-8 bg-[#5a33be] text-white px-24 py-12 rounded-6 text-16 font-medium hover:bg-[#4a2ba0] focus:outline-none focus:ring-2 focus:ring-[#5a33be] focus:ring-offset-2"
+            aria-label="정기연구보고서 목록으로 돌아가기"
+          >
             <div className="w-20 h-20">
               <img alt="목록" className="w-full h-full filter invert" src={iconList} />
             </div>

@@ -61,7 +61,7 @@ const Detail = () => {
             <span> isaacsgod@kfiri.org </span>
             <span className="text-[#b6b6b6]"> </span>
             <span className="text-[#d1d1d1]">ㅣ</span>
-            <span className="font-bold">개인정보보护政策 책임자</span>
+            <span className="font-bold">개인정보보호정책 책임자</span>
             <span>  김삼희</span>
           </p>
         </div>

@@ -93,7 +93,7 @@ const InfoList = () => {
                 placeholder="검색어를 입력하세요"
                 className="w-full px-16 py-12 border border-[#bfc3c8] rounded-4 text-16 focus:outline-none focus:border-[#5a33be]"
               />
-              <button className="absolute right-12 top-50% transform -translate-y-50% text-[#888888] hover:text-[#5a33be]">
+              <button className="absolute right-12 top-1/2 transform -translate-y-1/2 text-[#888888] hover:text-[#5a33be]">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M19 19l-4.35-4.35M15 8A7 7 0 118 15a7 7 0 017-7z" stroke="currentColor" strokeWidth="2" fill="none"/>
                 </svg>

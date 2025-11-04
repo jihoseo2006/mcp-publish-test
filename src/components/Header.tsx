@@ -2,7 +2,6 @@ const logo = "/c14f9c63fa1f29bef2b87a946a6b316938dbda6b.png";
 const logoMain = "/8d3493675a08ae1f4da162e87a6c546828d73bba.png";
 const hamburgerIcon = "/3eaa63b80913e4fbfc1a39d9b21c98119bab03af.svg";
 const bellOnIcon = "/58ca699f884eb8bdedfa3ed146f69a5665f87797.svg";
-const bellOffIcon = "/4ae7e2361918024cc8ab731fee976e15b2d744f0.svg";
 
 export default function Header() {
   return (

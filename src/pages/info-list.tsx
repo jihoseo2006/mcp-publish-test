@@ -101,21 +101,21 @@ const InfoList = () => {
       {/* Tab Navigation */}
       <div className="flex justify-center gap-40 mb-60">
         <div className="flex flex-col items-start gap-14">
-          <div className="font-pretendard font-bold text-20 leading-18 text-[#5a33be]">
+          <div className="font-pretendard font-bold text-20 leading-20 text-[#5a33be]">
             정기연구보고서
           </div>
           <div className="bg-[#5a33be] border-[#5a33be] h-2 w-full" />
         </div>
-        <div className="font-pretendard font-regular text-20 leading-18 text-center text-[#888888]">
+        <div className="font-pretendard font-regular text-20 leading-20 text-center text-[#888888]">
           R&D리포트
         </div>
-        <div className="font-pretendard font-regular text-20 leading-18 text-center text-[#888888]">
+        <div className="font-pretendard font-regular text-20 leading-20 text-center text-[#888888]">
           통계연감
         </div>
-        <div className="font-pretendard font-regular text-20 leading-18 text-center text-[#888888]">
+        <div className="font-pretendard font-regular text-20 leading-20 text-center text-[#888888]">
           연구용역
         </div>
-        <div className="font-pretendard font-regular text-20 leading-18 text-center text-[#888888]">
+        <div className="font-pretendard font-regular text-20 leading-20 text-center text-[#888888]">
           정부용역정보
         </div>
       </div>
